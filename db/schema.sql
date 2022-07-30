@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS employee_db;
 
 
 CREATE DATABASE employee_db;
@@ -18,11 +19,11 @@ CREATE TABLE emp_role (
     
     title VARCHAR(30) NOT NULL,
 
-    salary DECIMAL INT,
+    salary DECIMAL,
 
     department_id INT NOT NULL,
 
-    FOREIGN KEY (department_id) REFERENCES department (department_id)
+    FOREIGN KEY (department_id) REFERENCES department (id)
 
 );
 

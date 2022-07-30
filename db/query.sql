@@ -10,13 +10,16 @@ USE employee_db;
 --         JOIN students
 --         ON project_groups.group_id = students.group_id;
 
-SELECT 
-    dep_name AS 'departments',
-    first_name AS 'employees'
-    FROM department
-        JOIN emp_role ON emp_role.department_id = department.id
-        JOIN employee ON emp_role.id = employee.role_id;
+-- SELECT 
+--     dep_name AS 'departments',
+--     first_name AS 'employees'
+--     FROM department
+--         JOIN emp_role ON emp_role.department_id = department.id
+--         JOIN employee ON emp_role.id = employee.role_id;
         
+    SELECT 
+        dep_name
+        FROM department
 
 -- SELECT 
 --     group_name AS 'Project Groups',
